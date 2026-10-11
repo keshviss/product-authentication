@@ -1,0 +1,23 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "chain": "ganache --wallet.deterministic --chain.chainId 1337 --server.port 8545",
+    "compile": "hardhat compile",
+    "check": "hardhat run scripts/checkConnection.js --network ganache",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js --network ganache",
+    "seed": "hardhat run scripts/seed.js --network ganache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "ganache": "^7.9.2",
+    "hardhat": "^2.29.1"
+  }
+}

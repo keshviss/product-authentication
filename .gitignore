@@ -1,0 +1,19 @@
+# Dependencies and generated output
+**/node_modules/
+**/dist/
+**/artifacts/
+**/cache/
+**/coverage/
+**/typechain-types/
+
+# Local configuration and environment
+**/*.local
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs and editor/OS files
+**/*.log
+.DS_Store
+.idea/
+.vscode/
